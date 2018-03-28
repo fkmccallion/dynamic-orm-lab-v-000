@@ -1,6 +1,6 @@
 require_relative "../config/environment.rb"
+require_relative "../Gemfile"
 require 'active_support/inflector'
-require 'pry'
 
 class InteractiveRecord
 
