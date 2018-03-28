@@ -54,9 +54,8 @@ class InteractiveRecord
     DB[:conn].execute(sql)
   end
 
-  def self.find_by(attribute)
-    binding.pry
-    #sql = "SELECT * FROM #{self.table_name} WHERE #{self.column_names} = '#{attribute}'"
+  def self.find_by(name)
+    sql = "SELECT * FROM #{self.table_name} WHERE #{self.column_names} = '#{attribute}'"
     DB[:conn].execute(sql)
   end
 
